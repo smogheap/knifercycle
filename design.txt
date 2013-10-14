@@ -1,0 +1,500 @@
+KNIFERCYCLE
+===========
+An arcade-style game about riding and doing stunts on a bladed motorcycle.
+
+Knifercycle is GPL3-licensed and built using HTML5 technology.  Firefox and
+Chrome are primary targets, running on iPad or Android devices would be a
+bonus.
+
+
+Controls
+========
+On the ground:
+           Up,Down:  Steer into other lanes
+        Left,Right:  Change speed/direction
+            Button:  Boost
+In the air:
+Up,Down,Left,Right:  Aim the knifercycle blade
+
+Knifercycle supports any and all input methods.  Most input events translate
+to keypresses for input-handling simplicity.  Any contradictory (left+right)
+inputs cancel each other out.
+
+Keyboard Mappings
+-----------------
+Keyboard controls are meant to be easily guessable, and map to the X-Arcade
+family of joysticks on their default settings.
+    Up:  Up, Num_8
+  Down:  Down, Num_2
+  Left:  Left, Num_4
+ Right:  Right, Num_6
+Button:  Ctrl, Alt, Space
+
+Touch
+-----
+An on-screen 8-directional joystick and button will be shown if the "Start"
+button is touched (as opposed to clicked or reacting to keypress).  An option
+to show/hide/auto-display the overlay will be honored.
+     ^
+     _           _
+<   (_)   >     (_)
+     "          '-'
+     v
+   DRIVE       BOOST
+
+Joystick
+--------
+Joystick axes and buttons will all be mapped the same as the touch joystick.
+All axes and hats map to directional controls, and all buttons map to the
+boost button.
+
+Gyroscope / Accelerometer
+-------------------------
+Not supported, easy to hack in if someone really wants to somehow play by
+wiggling.
+
+
+Mechanics
+=========
+
+Acceleration, braking, and turning are all handled by the left and right
+controls.  Holding the direction the knifercycle is facing will accelerate in
+steps, though it is possible to accelerate more quickly by repeatedly tapping
+forward.  Holding the opposite direction will brake until stopped, and again
+repeatedly tapping back can brake even faster.
+
+Holding or tapping the opposite direction while stopped will turn the
+knifercycle around.
+
+The boost function adds to the speed of the knifercycle for two seconds, over
+a linear or sine-wave curve.  These curves may overlap (if boosts are saved
+up and used rapidly) and further boost speed, up to a set cap.
+
+
+Script
+======
+
+Prologue: Normal Mode
+---------------------
+Welcome to Crapnameville
+
+The people grow restless.  They petition to change the town's name, but to
+what?  The people need a symbol.  They need a hero.
+
+You are Wingus K Dingus, local gravy enthusiast and amateur stunt man.  Your
+latest stunt vehicle is ready.  You shall call it...
+
+Knifercycle!
+
+Prologue: Hard Mode
+-------------------
+Your Knifercycle is in the shop.  Fortunately, your local fans have built you
+this stunning replacement...
+
+Knifercycle?
+
+Mission 1: Driveway
+-------------------
+Time to take your knifercycle for a test drive.  Practice your way to the end
+of your driveway!
+
+(balloons: 10 points each)
+(hulahoops: 10 points each)
+
+Mission 2: Zombies
+------------------
+Zombies are attacking the town!  You check around - you are the only person on
+a knifercycle.  Looks like this crisis falls to you.
+
+(zombies: 5 points each)
+
+Mission 3: Abattoiretum
+-----------------------
+Due to budget cuts, the arboretum and abattoir have been merged.  Trim the
+branches and cut the meat!  Remember: disinfect your knifercycle between jobs.
+
+Mission 4: Kebab
+----------------
+A giant has agreed not to eat the townspeople if someone will make him a nice
+kebab.  He wants one of each ingredient, plenty of barbecue sauce, well-done.
+
+Epilogue
+--------
+Wingus K Dingus amazed the townspeople, and with the help of his knifercycle,
+he also saved their lives.
+
+The giant had a nice kebab, and the people now have their hero.
+
+Welcome to Wingdingston
+
+Extra Levels
+============
+
+The Mayor's Haircut
+-------------------
+The mayor has gotten all shaggy, and his ratings could use a boost.  Will the
+local hero give him a celebrity haircut?
+
+(stab mayor)
+  You've stabbed the mayor, and his hair got bloodier but no shorter.
+  0 points
+(exit)
+  You chickened out.  The mayor is left humiliated and shaggy.
+  10 points
+(jump over + exit)
+  You missed!  The mayor pretends you gave him just the cut he wanted.
+  20 points
+(cut hair)
+  You cut the mayor's hair, and he looks fabulous!
+  100 points
+
+The Mayor's Toenails
+--------------------
+The mayor's gotten too fat to cut his toenails, but he's managed to climb up a
+lifeguard tower.  You know what to do!
+
+(stab mayor)
+  You've stabbed the mayor.  His corpse's toenails are long and gross.
+  0 points
+(exit)
+  Coward!  What could possibly have gone wrong?
+  10 points
+(cut tower)
+  You cut the mayor down from his perch, and several of his toenails break.
+  20 points
+(cut toenails)
+  You cut off the mayor's toe.  It resonates with voters, and Nine-toe Joe is
+  re-elected in a landslide!
+  100 points
+
+The Grand Opening
+-----------------
+Mayor Nine-toe Joe is dedicating a new grocery store, but he left his huge
+novelty scissors in his other pants.  Help him complete the ceremony!
+
+(exit)
+  The mayor stood up there for hours with no scissors and no knifercycle
+  coming to the rescue.
+  0 points
+(stab anybody)
+  Well, it was only a matter of time before a knifercycle-led grocery store
+  opening turned into a bloodbath.
+  10 points
+(stab pumpkin)
+  Fine, you get rewarded for cutting a pumpkin.  But only because there's a
+  pumpkin-carving program available from the maker of Knifercycle(R)TM(c).
+  90 points
+(cut ribbon)
+  That is one open grocery store!
+  100 points
+
+Babysit Little Sally
+--------------------
+Little Sally's parents have chosen you to be a babysitter.  Be safe!
+
+(stab little sally)
+  You've killed Little Sally!  They left you brownies, man.  Not cool.
+  0 points
+(break anything)
+  That's coming out of your pay!
+  10 points
+(30 seconds pass)
+  You've shown better judgement than Little Sally's parents!
+  100 points
+
+Little Sally's Kitty
+--------------------
+Little Sally's kitty is stuck up a tree.  Knifercycle to the rescue!
+
+Little Sally's Dolly
+--------------------
+Little Sally's dolly is stuck up on the roof.  Knifercycle to the rescue!
+
+No Trespassing
+--------------
+The old grump has put up a "no trespassing" sign on his lawn.  Show him who's
+boss!
+
+(exit)
+  And so the old grump and his sign lived happily ever after.
+  0 points
+(stab grump)
+  I guess that's one way to do it.  That'll teach him.
+  20 points
+(cut sign)
+  Loophole!  There was no "no knifercycle" sign!
+  100 points
+
+No Knifercycle
+--------------
+The old grump has put up a "no knifercycle" sign.  Are you going to take that?
+
+(exit)
+  Picking your battles, huh?
+  0 points
+(cut sign)
+
+Lawn Darts
+----------
+Billy and Bobby are playing with lawn darts.  Teach them an important lesson
+about safety!
+
+(exit)
+  Billy and Bobby continued playing lawn darts, and died only 70 years later.
+  0 points
+(stab billy)
+  You killed Billy!  Only Bobby learned an important lesson.
+  50 points
+(stab bobby)
+  You killed Bobby!  Only Billy learned an important lesson.
+(stab ground)
+  Jamming your knifercycle into the ground has taught Billy and Bobby a
+  valuable lesson.  ...Somehow.
+  100 points
+
+Toast
+-----
+The giant is back and he's snacky.  Pick up some butter, drop it on the huge
+toast, and spread it around!
+
+(exit)
+  The giant's craving for buttered toast goes unfulfilled, so he eats you and
+  everybody you hold dear.
+  0 points
+(stab butter + exit)
+  The giant fries you in your stolen butter, which is a suitable snack
+  substitute.
+  10 points
+(turn around on toast)
+  Nice job, but those skid marks detract from the presentation of the snack.
+  80 points
+(complete sandwich)
+  The giant yums up the buttered toast and leaves you alone forever.
+  100 points
+
+Sandwich
+--------
+The giant wants a sandwich now.  Spread the mayonnaise, slice the tomato, and
+pile on the meat.  After the crew drops the bread, skewer the olive!
+
+(exit)
+  You cowardly run away from your beloved hometown, leaving it and all its
+  inhabitants at the mercy of a hungry and enraged giant.
+  0 points
+(progress + exit)
+  The giant, infuriated by your snack tease, flattens the town and tosses you
+  into the nearest volcano.
+  10 points
+(crushed by bread)
+  To understand the sandwich, you must become the sandwich.  And be eaten.
+  60 points
+(complete sandwich)
+  The giant snarfs your sandwich with gusto, and burps his appreciation in
+  your general direction.
+  100 points
+
+Autographs
+----------
+Your fans want some autographs!  Find a big pen and sign with flair!
+
+(exit)
+  You abandon your fans, and they abandon you.  Suicide rates skyrocket.
+  0 points
+(cut paper)
+  Sign, cut up... same thing right?
+  10 points
+(sign some + exit)
+  You left some of your fans hanging, so some of your fans hang you by your
+  left... "some".
+  30 points
+(sign all)
+  Your fans will cherish your jibbery-style signatures for seconds to come!
+  100 points
+
+Fan Mail
+--------
+You've got a lot of fan mail to open.  How ever will you do it?
+
+(exit)
+  Ashamed by your illiteracy, you sneak out and hope nobody notices.
+  0 points
+(cut some + exit)
+  The nutjobs, the haters, the horrible spelling across the board...  It was
+  all too much for you, wasn't it?
+  20 points
+(cut all)
+  That's a lot of fan mail!  Or were those your replies?
+  100 points
+
+Anarchy
+-------
+Some anarchists are in town.  Stick it to the man!
+
+(stab mayor)
+  You killed the beloved mayor! Why?  The townspeople take two of your toes in
+  return.
+  0 points
+(exit)
+  No artificial facist big-brother game rules are gonna govern you!
+  10 points
+(stab woman)
+  Stuck it to the wo-man instead, huh?  I get it, independent streak.  And
+  what with the anarchy and all.
+  80 points
+(stab man)
+  Get it, the man?  Ugh, the goal was almost a pun.
+  100 points
+
+Cucumber Song
+-------------
+Feed the turtle cucumber slices in time with his song!
+
+(cucumber: 20 points each)
+(stab turtle)
+  That two hundred year old turtle had some harsh critics, but you're the
+  worst.  Are you proud?
+  0 points
+(exit)
+  The turtle sings long into the night about the putz who forgot to feed him
+  cucumber slices.
+  10 points
+
+Twins
+-----
+Gem and I don't want to be conjoined anymore.  Our insurance lists you as a...
+stunt surgeon?  What's that?
+
+(exit)
+  What, you can think of someone more qualified to do delicate surgery than a
+  stunt man on a knifercycle?  Keep dreaming.
+  0 points
+(stab)
+  Great, now I get to lug around my twin's corpse.  At least she'll quit
+  snoring.
+  10 points
+(cut without disinfecting)
+  This looks pretty infected, but what did we expect?
+  80 points
+(complete)
+  Thank you!  And thank you!  ...You know, seperately.
+  100 points
+
+In 3D
+-----
+The local cinema is too cheap to upgrade to a 3D projector, but exactly cheap
+enough to hire you!  Add some special effects to the movie!
+
+(stab screen too slow)
+  That was the special olympics of special effects.
+  0 points
+(exit)
+  You failed, but you preserved the artistic integrity of the movie,
+  10 points
+(stab anybody)
+  Nice touch, stabbing those dummy customers.  Wait a minute...
+  20 points
+(complete)
+  It's like that knifercyclist with body odor was coming right at us!
+  100 points
+
+Giant's Toothpick
+-----------------
+The giant has something or someone stuck in his teeth.  Do you have anything
+that could be used as a giant toothpick?
+
+(exit)
+  You must be going to go find a big toothpick.  Couldn't think of anything
+  else you might use, huh?
+  0 points
+(stab giant)
+  Did you kill the giant just because he ate you?
+  50 points
+(stab teeth)
+  That's better!  Nothing like cleaning the teeth of the giant who ate you.
+  100 points
+
+Knife to a Gunfight
+-------------------
+The town's gang violence is out of control!  Bring your knifercycle to their
+gunscooter fight!
+
+(gangsters: 10 points each)
+(exit)
+  You're alive.  You're a pathetic coward, but you're alive.
+  0 points
+(wait)
+  No more gang violence, and you didn't get your hands dirty!  Impressive!
+  100 points
+
+Dump Fire
+---------
+Rednecks started a fire in the dump, and the woods are burning!  Clear away
+flammable vegetation to stop the fire from spreading into town!
+
+(shrubs: 5 points each)
+(trees: 10 points each)
+(exit)
+  You decided to take down the fire from within.  Good luck with that.
+  0 points
+
+Shark
+-----
+The developer has threatened to make a sequel.  Ruin this series before he
+does!
+
+(exit)
+  What have you done?  Now the door is open for everything from Lego
+  Knifercycle to Super Knifercycle 3 Turbo: the search for Knifercycle 2.
+  0 points
+(stab shark)
+  "Knifed the shark": Ruined everything.  A reference to the single worst
+  moment in the history of gaming.
+  100 points
+(jump shark)
+  Worst.  Challenge.  Ever.
+  100 points
+
+Christmas
+---------
+The Christmas tree is too tall.  Go!
+
+(exit)
+  Bailing on Christmas huh?  I'll check twice but I think that's naughty.
+  0 points
+(cut near top)
+  You've ruined Christmas!
+  10 points
+(cut near bottom)
+  Oh Christmas tree, oh Christmas tree, the knifercycle fixed you!
+  100 points
+
+The Bris
+--------
+Your phone number used to belong to a mohl.  But a voicemail is a legally
+binding contract, right?
+
+(exit)
+  You just can't cut it, huh?
+  0 points
+(jump baby)
+  You missed!  Junior says thank you.
+  50 points
+(cut baby)
+  Nipped the tip!
+  100 points
+
+Thunderbirds
+------------
+Formation drivers are clogging the highway.  Knifercycle patrol unit respond!
+
+(formations: 10 points each)
+(exit)
+  Wrong way on the highway...  I don't know, two wrongs don't make a right.
+  0 points
+
+
+Badges
+======
+sliced bread grocery
+squidbillies hat
+pacifist (no zombies killed)

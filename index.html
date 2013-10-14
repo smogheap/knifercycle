@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <title>Knifercycle</title>
+    <link href="icon60.png" type="image/png" rel="icon">
+    <meta content="height=device-height, width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
+    <style>
+      body, html {
+        background: black;
+        overflow: hide;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        color: white;
+      }
+      #page {
+        display: table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      #center {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script src="js/levels.js"></script>
+    <script src="js/knifercycle.js"></script>
+  </head>
+  <body>
+    <div id="page">
+      <div id="center">
+        <div id="loading">Loading...</div>
+        <canvas id="display" width=0 height=0>
+          Sorry, you'll need a better browser to play <b>Knifercycle</b>.
+          <br>
+          I suggest <a href="http://mozilla.org/firefox">Mozilla FireFox</a>.
+        </canvas>
+      </div>
+    </div>
+    <div id="assets" class="hidden">
+      <img id="player-drive0" src="img/player-drive0.png">
+      <img id="player-drive1" src="img/player-drive1.png">
+      <img id="player-drive2" src="img/player-drive2.png">
+
+      <img id="level-dirt-blank" src="img/level-dirt-blank.png">
+      <img id="level-dirt-lowramp" src="img/level-dirt-lowramp.png">
+      <img id="level-dirt-medramp" src="img/level-dirt-medramp.png">
+      <img id="level-dirt-highramp" src="img/level-dirt-highramp.png">
+      <img id="level-dirt-lowhoop" src="img/level-dirt-lowhoop.png">
+      <img id="level-dirt-medhoop" src="img/level-dirt-medhoop.png">
+      <img id="level-dirt-highhoop" src="img/level-dirt-highhoop.png">
+    </div>
+  </body>
+</html>
