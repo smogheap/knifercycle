@@ -1,0 +1,150 @@
+LOAD({
+	"name": "knifercycle",
+	"scale": 0.5,
+	"above": [
+		{
+			"name": "cycle01",
+			"image": "image/cycle01.png",
+			"pivot": {
+				"x": 499,
+				"y": 444
+			},
+			"rotate": 0,
+			"scale": 1,
+			"alpha": 1,
+			"offset": {
+				"x": 150,
+				"y": -36.66666666666661
+			},
+			"above": [],
+			"below": [
+				{
+					"tag": "still",
+					"name": "wheel02",
+					"image": "image/wheel02.png",
+					"pivot": {
+						"x": 129,
+						"y": 130
+					},
+					"rotate": 0,
+					"scale": 1,
+					"alpha": 1,
+					"offset": {
+						"x": 86,
+						"y": 386
+					},
+					"above": [],
+					"below": []
+				},
+				{
+					"tag": "move",
+					"name": "wheel02move",
+					"image": "image/wheel02blur22.png",
+					"pivot": {
+						"x": 129,
+						"y": 130
+					},
+					"rotate": 0,
+					"scale": 1,
+					"alpha": 1,
+					"offset": {
+						"x": 86,
+						"y": 386
+					},
+					"above": [],
+					"below": []
+				},
+				{
+					"tag": "fast",
+					"name": "wheel02fast",
+					"image": "image/wheel02blur45.png",
+					"pivot": {
+						"x": 129,
+						"y": 130
+					},
+					"rotate": 0,
+					"scale": 1,
+					"alpha": 1,
+					"offset": {
+						"x": 86,
+						"y": 386
+					},
+					"above": [],
+					"below": []
+				},
+				{
+					"tag": "still",
+					"name": "wheel04",
+					"image": "image/wheel04.png",
+					"pivot": {
+						"x": 130,
+						"y": 129
+					},
+					"rotate": 0,
+					"scale": 1,
+					"alpha": 1,
+					"offset": {
+						"x": 801,
+						"y": 386
+					},
+					"above": [],
+					"below": []
+				},
+				{
+					"tag": "move",
+					"name": "wheel04move",
+					"image": "image/wheel04blur22.png",
+					"pivot": {
+						"x": 130,
+						"y": 129
+					},
+					"rotate": 0,
+					"scale": 1,
+					"alpha": 1,
+					"offset": {
+						"x": 801,
+						"y": 386
+					},
+					"above": [],
+					"below": []
+				},
+				{
+					"tag": "fast",
+					"name": "wheel04fast",
+					"image": "image/wheel04blur45.png",
+					"pivot": {
+						"x": 130,
+						"y": 129
+					},
+					"rotate": 0,
+					"scale": 1,
+					"alpha": 1,
+					"offset": {
+						"x": 801,
+						"y": 386
+					},
+					"above": [],
+					"below": []
+				},
+				{
+					"name": "knife01",
+					"image": "image/knife01.png",
+					"pivot": {
+						"x": 889,
+						"y": 102
+					},
+					"rotate": 0,
+					"scale": 1,
+					"alpha": 1,
+					"offset": {
+						"x": 236.66666666666686,
+						"y": 186.66666666666677
+					},
+					"above": [],
+					"below": []
+				}
+			]
+		}
+	],
+	"below": []
+});

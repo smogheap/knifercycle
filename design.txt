@@ -48,6 +48,12 @@ Joystick axes and buttons will all be mapped the same as the touch joystick.
 All axes and hats map to directional controls, and all buttons map to the
 boost button.
 
+Controller Display
+------------------
+Should Knifercycle find its way onto Wii U, 3DS, or some other platform with
+a separate display built into the controller, an expanded map and status
+screen (normally seen only on the pause menu) will be shown.
+
 Gyroscope / Accelerometer
 -------------------------
 Not supported, easy to hack in if someone really wants to somehow play by
@@ -69,6 +75,19 @@ knifercycle around.
 The boost function adds to the speed of the knifercycle for two seconds, over
 a linear or sine-wave curve.  These curves may overlap (if boosts are saved
 up and used rapidly) and further boost speed, up to a set cap.
+
+Map
+---
+On the pause screen, a small and abstract map of the current level will be
+shown.  The player's position and certain items and objectives will be marked,
+depending on which special items the player has collected:
+- Compass: Display the player's location
+- Radar: Display mission-critical objective locations
+- Windsock: 
+- Metal detector: Display bottle caps
+
+Items:
+- Bottle caps: Flip over to reveal (lack of) prize
 
 
 Script
@@ -407,7 +426,7 @@ that could be used as a giant toothpick?
   else you might use, huh?
   0 points
 (stab giant)
-  Did you kill the giant just because he ate you?
+  Did you kill the giant just because he ate you?  Rude.
   50 points
 (stab teeth)
   That's better!  Nothing like cleaning the teeth of the giant who ate you.
