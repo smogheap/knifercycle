@@ -6,13 +6,11 @@ DEMO = {
 	thing: {},
 	wheelspeed: 1
 };
-
 function LOAD(json) {
 	var data = json;
 	var name = data.name || "anonymous";
 	DEMO.json[name] = data;
 }
-
 if(!console) {
 	console = {
 		log: function() {},
@@ -20,14 +18,9 @@ if(!console) {
 	}
 }
 
-
 function tick() {
-//	DEMO.thing.knifercycle.x+=2;
-//	DEMO.thing.knifercycle.y+=2;
-
 	DEMO.thing.knifercycle.x = 1000;
 	DEMO.thing.knifercycle.y = 500;
-
 	if(DEMO.thing.knifercycle.x > DEMO.width) {
 		DEMO.thing.knifercycle.x = 0;
 	}
@@ -41,7 +34,6 @@ function tick() {
 	DEMO.thing.knifercycle.obj._$.wheel02fast.rotate -= DEMO.wheelspeed;
 	DEMO.thing.knifercycle.obj._$.wheel04fast.rotate -= DEMO.wheelspeed;
 }
-
 function start() {
 	console.log("start");
 	var scene = new penduinSCENE(DEMO.canvas, DEMO.width, DEMO.height,
@@ -51,17 +43,13 @@ function start() {
 	scene.setBG("teal");
 }
 
-
 window.addEventListener("load", function() {
-	// init globals
 	DEMO.canvas = document.querySelector("#display");
-
 	if(DEMO.json.knifercycle) {
 		DEMO.thing.knifercycle = new penduinOBJ(DEMO.json.knifercycle, start);
 		DEMO.thing.knifercycle.setTags("still");
 	}
 });
-
 window.addEventListener("click", function() {
 	if(DEMO.thing.knifercycle) {
 		var tag = DEMO.thing.knifercycle.getTags()[0];
